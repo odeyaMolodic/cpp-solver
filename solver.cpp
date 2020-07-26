@@ -8,7 +8,7 @@ namespace solver
 {
     //// solve functions ////
 
-    // https://stackoverflow.com/questions/898076/solve-quadratic-equation-in-c
+    // I take the answer from: https://stackoverflow.com/questions/898076/solve-quadratic-equation-in-c
 
     double solve(const RealVariable& num)
     {

@@ -10,10 +10,6 @@ STUDENT_OBJECTS := $(subst .cpp,.o,$(STUDENT_SOURCES))
 run: test
 	./$^
 
-demo: Demo.o $(STUDENT_OBJECTS)
-	$(CXX) $(CXXFLAGS) $^ -o demo
-	./demo
-
 test: TestRunner.o Test_iris.o Test_shahar.o $(STUDENT_OBJECTS)
 	$(CXX) $(CXXFLAGS) $^ -o test
 
